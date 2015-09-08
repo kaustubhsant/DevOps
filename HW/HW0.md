@@ -53,7 +53,10 @@
 ![Git Basics](/HW/HW0-git-basics.png)
 
 # Hooks #
-content in "post-commit" file in ".git/hooks/":
+Content in "post-commit" file in ".git/hooks/"
 
 	!#/bin/bash
 	start "http://www.google.com"
+
+
+The link to .gif file [Link to GIF](/HW/HW0-Hooks.gif).
