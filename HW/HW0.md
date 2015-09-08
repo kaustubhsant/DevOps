@@ -50,7 +50,9 @@
 	git checkout pushed
 	git revert pushed
 
+
 ![Git Basics](/HW/HW0-git-basics.png)
+
 
 # Hooks #
 Content in "post-commit" file in ".git/hooks/"
@@ -59,4 +61,4 @@ Content in "post-commit" file in ".git/hooks/"
 	start "http://www.google.com"
 
 
-The link to .gif file [Link to GIF](/HW/HW0-Hooks.gif).
+The link to .gif file [HW0-Hooks.gif](/HW/HW0-Hooks.gif) showing the process of creating post-commit hook to open "http://www.google.com" after every commit.
