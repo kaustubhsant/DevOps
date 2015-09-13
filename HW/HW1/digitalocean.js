@@ -87,7 +87,3 @@ client.deletedroplet(dropletId,function(err,resp){
  	}
 
 });*/
-// #############################################
-// #7 In the command line, ping your server, make sure it is dead!
-// ping xx.xx.xx.xx
-// It could be possible that digitalocean reallocated your IP address to another server, so don't fret it is still pinging.
