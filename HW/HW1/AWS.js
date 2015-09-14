@@ -23,6 +23,5 @@ ec2.runInstances(params, function(err, data) {
 	}
 
   var instanceId = data.Instances[0].InstanceId;
-  console.log("Created instance", instanceId);
-  
+  console.log("Created instance", instanceId);  
 });
