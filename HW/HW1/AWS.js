@@ -31,9 +31,7 @@ ec2.runInstances(params, function(err, data) {
   			console.log("Could not find instance", err); 
   			return; 
 		}
-		console.log(data.Reservations[0].Instances[0].PublicIpAddress);
+		console.log("Public IP address: ",data.Reservations[0].Instances[0].PublicIpAddress);
   });},30000);
 
 });
-
-
