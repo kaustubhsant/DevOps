@@ -15,6 +15,7 @@ var params = {
   SecurityGroups: ["devops"]
 };
 
+
 // Create the instance
 ec2.runInstances(params, function(err, data) {
   if (err) { 
@@ -23,5 +24,16 @@ ec2.runInstances(params, function(err, data) {
 	}
 
   var instanceId = data.Instances[0].InstanceId;
-  console.log("Created instance", instanceId);  
+  console.log("Created instance", instanceId);   
+  
+  setTimeout(function(){ec2.describeInstances({InstanceIds:[instanceId]}, function(err, data){
+  	if (err) { 
+  			console.log("Could not find instance", err); 
+  			return; 
+		}
+		console.log(data.Reservations[0].Instances[0].PublicIpAddress);
+  });},30000);
+
 });
+
+
