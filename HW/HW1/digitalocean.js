@@ -11,9 +11,6 @@ var headers =
 	Authorization: 'Bearer ' + token
 };
 
-// Documentation for needle:
-// https://github.com/tomas/needle
-
 var client =
 {	
 
@@ -76,21 +73,3 @@ var client =
  		
  	}
  });
-
-// #############################################
-// #6 Extend the client to DESTROY the specified droplet.
-// Comment out when done.
-// https://developers.digitalocean.com/#delete-a-droplet
-// HINT, use the DELETE verb.
-// HINT #2, needle.delete(url, data, options, callback), data needs passed as null.
-// No response body will be sent back, but the response code will indicate success.
-// Specifically, the response code will be a 204, which means that the action was successful with no returned body data.
-/*var dropletId = "7329980";
-client.deletedroplet(dropletId,function(err,resp){
-
- 	if(!err && resp.statusCode == 204)
- 	{
-			console.log("Deleted!");
- 	}
-
-});*/
