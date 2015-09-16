@@ -1,0 +1,2 @@
+node0 ansible_ssh_host=192.81.213.131 ansible_ssh_user=root ansible_ssh_private_key_file=/home/vagrant/.ssh/id_rsa
+node1 ansible_ssh_host=54.164.118.158 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=/home/vagrant/keys/devops.pem
