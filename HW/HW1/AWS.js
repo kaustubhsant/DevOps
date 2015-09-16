@@ -34,7 +34,7 @@ ec2.runInstances(params, function(err, data) {
 		}
 		console.log("recieved public ip address: ",data.Reservations[0].Instances[0].PublicIpAddress);
 		console.log("writing to inventory file...");
-		var inventorydata = "node1 ansible_ssh_host=" + data.Reservations[0].Instances[0].PublicIpAddress + "ansible_ssh_user=ec2-user ansible_ssh_private_key_file=/home/vagrant/keys/devops.pem";
+		var inventorydata = "node1 ansible_ssh_host=" + data.Reservations[0].Instances[0].PublicIpAddress + " ansible_ssh_user=ec2-user ansible_ssh_private_key_file=/home/vagrant/keys/devops.pem\n";
 		fs.appendFileSync('inventory', inventorydata, encoding='utf8');
 		console.log("finished writing to inventory file");
   });},30000);
