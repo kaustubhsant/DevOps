@@ -2,11 +2,11 @@
 ### Part 1 and 2: Configuring and Provisioning of Servers on 2 service providers and automatically create inventory file
 #### To provision a droplet on digitalocean
 	node digitalocean.js
-The [digitalocean.js](/HW/HW1/digitalocean.js) creates a droplet on digitalocean and gets public ip address and creates an inventory file with these details for ansible to use.
+The [digitalocean.js](/HW/HW1/digitalocean.js) creates a droplet on digitalocean and gets public ip address. It also appends to inventory file with these details for ansible to use.
 
 #### To provision a instance on AWS
 	node AWS.js
-The [AWS.js](/HW/HW1/AWS.js) creates an instance on AWS and gets public ip address and creates an inventory file with these details for ansible to use.
+The [AWS.js](/HW/HW1/AWS.js) creates an instance on AWS and gets public ip address. It also appends to inventory file with these details for ansible to use.
 
 ### Part 3: Create ansible playbook
 To install and start nginx webserver on nodes the [ansible playbook](/HW/HW1/playbook.yml) and previously created [inventory](/HW/HW1/inventory) file is used.
