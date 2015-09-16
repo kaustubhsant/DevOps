@@ -30,9 +30,8 @@ to start nginx webserver on nodes.
 7. Check nginx is installed with no errors.
 8. Visit public IP addresses to check nginx webserver is started on both instances.
 
-### ABout AWS CodePipeline
-AWS CodePipeline is a continuous delivery service for fast and reliable application updates. CodePipeline builds, tests, and deploys code every time there is a code change, based on the release process models that are defined. This enables user to rapidly and reliably deliver features and updates. End-to-end solution can also be built by using pre-built plugins for popular third-party services like GitHub or integrating new own custom plugins into any stage of the release process. 
-The Key features of AWS CodePipeline include the following: 
+### About AWS CodePipeline
+AWS CodePipeline is a continuous delivery service for fast and reliable application updates. CodePipeline builds, tests, and deploys code every time there is a code change, based on the release process models that are defined. This enables user to rapidly and reliably deliver features and updates. End-to-end solution can also be built by using pre-built plugins for popular third-party services like GitHub or integrating new own custom plugins into any stage of the release process. The Key features of AWS CodePipeline include the following.
 ###### Workflow Modeling
  AWS CodePipeline provides a graphical user interface to create, configure, and manage the pipeline and its various stages and actions, allowing user to easily visualize and model the release process workflow.
 ###### AWS Integrations
