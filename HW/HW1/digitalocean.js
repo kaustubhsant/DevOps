@@ -68,7 +68,7 @@ var client =
 				var ip_address = data2.droplet.networks.v4[0].ip_address;
 				console.log("recieved public ipaddress:",ip_address);
 				console.log("writing to inventory file...");	
-				var inventorydata = "node0 ansible_ssh_host=" + ip_address + " ansible_ssh_user=root ansible_ssh_private_key_file=/home/vagrant/keys/account_pvtkey.ppk\n";
+				var inventorydata = "node0 ansible_ssh_host=" + ip_address + " ansible_ssh_user=root ansible_ssh_private_key_file=/home/vagrant/keys/acount_pvtkey.ppk\n";
 				fs.appendFileSync('inventory', inventorydata, encoding='utf8');
 				console.log("finished writing to inventory file");
 			}
