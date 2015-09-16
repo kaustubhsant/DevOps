@@ -24,7 +24,7 @@ var client =
 			"name": "ksant-"+ os.hostname(),
 			"region": "nyc1",
 			"size":"512mb",
-			"image":"ubuntu-14-04-x32",
+			"image":"fedora-22-x64",
 			// Id to ssh_key already associated with account.			
 			"ssh_keys": config.get('ssh_keys'),
 			"backups":false,
