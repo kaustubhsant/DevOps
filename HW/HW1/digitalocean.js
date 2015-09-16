@@ -38,12 +38,8 @@ var client =
 	listDroplet: function( dropletId, onResponse )
 	{
 		needle.get("https://api.digitalocean.com/v2/droplets/"+dropletId, {headers:headers}, onResponse);
-	},
+	}
 
-	deletedroplet: function(dropletId, onResponse)
-	{
-		needle.delete("https://api.digitalocean.com/v2/droplets/"+dropletId,null, {headers:headers}, onResponse);	
-	}	
 };
 
 
