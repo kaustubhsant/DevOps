@@ -1,11 +1,11 @@
 ---
 - hosts: all
+  become: true
   tasks:
    - name: Installs epel-release
      yum: pkg=epel-release state=installed update_cache=true
    - name: Installs nginx web server
      yum: pkg=nginx state=installed update_cache=true
-     become_user: true
      notify:
        - start nginx
 
