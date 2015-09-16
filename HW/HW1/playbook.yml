@@ -5,6 +5,7 @@
      yum: pkg=epel-release state=installed update_cache=true
    - name: Installs nginx web server
      yum: pkg=nginx state=installed update_cache=true
+     become: true
      notify:
        - start nginx
 
