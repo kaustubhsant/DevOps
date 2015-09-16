@@ -8,7 +8,7 @@ var ec2 = new AWS.EC2();
 
 var params = {
   ImageId: 'ami-1624987f', // Amazon Linux AMI x86_64 EBS
-  InstanceType: 't2.micro',
+  InstanceType: 't1.micro',
   MinCount: 1, 
   MaxCount: 1,
   KeyName: "devops",
