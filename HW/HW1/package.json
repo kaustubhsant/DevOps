@@ -1,0 +1,12 @@
+{
+  "name": "HW1",
+  "version": "0.0.0",
+  "description": "Configuring dependencies for HW1",  
+  "author": "Kaustubh Sant",
+  "license": "ISC",
+  "devDependencies": {
+    "needle": "0.10.0",
+    "aws-sdk" : "2.2.0",
+    "config" : "1.16.0"
+  }
+}
