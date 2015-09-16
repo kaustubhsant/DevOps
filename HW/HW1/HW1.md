@@ -14,6 +14,7 @@ To install and start nginx webserver on nodes the [ansible playbook](/HW/HW1/pla
 
 ### Part 4: Configuration management through npm
 The [package.json](/HW/HW1/package.json) has the version and depencencies to be installed. To install all depenndencies run following command.
+
 	npm install
 
 ### Gif of the complete process
