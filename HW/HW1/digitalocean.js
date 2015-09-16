@@ -55,7 +55,9 @@ var client =
  	// StatusCode 202 - Means server accepted request.
  	if(!err && resp.statusCode == 202)
  	{
- 		console.log( JSON.stringify( body, null, 3 ) ); 		
+ 		//console.log( JSON.stringify( body, null, 3 ) );
+ 		console.log("created droplet with id:",data.droplet.id);
+ 		console.log("getting public ipaddress of droplet...."); 		
  		setTimeout( function() {client.listDroplet(data.droplet.id, function(error,response) {
 			var data2 = response.body;
 	
@@ -63,7 +65,11 @@ var client =
 			{
 				console.log(data2.droplet);		
 				var ip_address = data2.droplet.networks.v4[0].ip_address;
-				console.log(ip_address);	
+				console.log("recieved public ipaddress:",ip_address);
+				console.log("writing to inventory file...");	
+				var inventorydata = "node0 ansible_ssh_host=" + ip_address + "ansible_ssh_user=root ansible_ssh_private_key_file=/home/vagrant/keys/account_pvtkey.ppk";
+				fs.appendFileSync('inventory', inventorydata, encoding='utf8');
+				console.log("finished writing to inventory file");
 			}
 		});},10000);
  		
