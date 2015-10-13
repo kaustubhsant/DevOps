@@ -57,7 +57,7 @@
 # Hooks #
 Content in "post-commit" file in ".git/hooks/"
 
-	!#/bin/bash
+	#!/bin/bash
 	start "http://www.google.com"
 
 
