@@ -235,7 +235,7 @@ function generateTestCases()
 		}		
 		else
 		{
-			// Emit simple test case.
+			// Emit all test cases.
 			for(var i=0;i<argslist.length;i++){
 				content += "subject.{0}({1});\n".format(funcName, argslist[i] );
 			}
@@ -437,9 +437,6 @@ function constraints(filePath)
 						}
 					}
 				}	
-				
-				// handle property.name=="indexOf"	
-				// handle area=="212" case
 			});
 
 			console.log( functionConstraints[funcName]);
