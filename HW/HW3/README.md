@@ -19,8 +19,8 @@ The below commands are run in terminal to access the routes created.
 
 The goal *Additional service instance running* is completed by running 2 instances of main.js with different ports to have an additional instance of redis client service running.
 
-	node main.js 3000 (terminal 1)
-	node main.js 3001 (terminal 2)
+	node main.js 3001 (terminal 1)
+	node main.js 3002 (terminal 2)
 
 The goal *Demonstrate proxy* is implemented by the [proxy.js](/proxy.js) file.
 
