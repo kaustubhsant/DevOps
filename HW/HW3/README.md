@@ -30,4 +30,4 @@ The goal *Demonstrate proxy* is implemented by the [proxy.js](/proxy.js) file.
 
 
 ##Screencast
-![image](/hw3.gif)
+![image](hw3.gif)
