@@ -1,7 +1,7 @@
 #Homework 4
 
 ##Goal 1
-**_File IO**_
+**_File IO_**
 
 The docker build image file which exposes file over port 9001 is [container1](scripts/Dockerfile-container1) and the docker image which access the file from first container is [container2](scripts/Dockerfile-container2).
 
@@ -11,7 +11,7 @@ The docker build image file which exposes file over port 9001 is [container1](sc
 
 
 ##Goal 2
-**_Ambassador pattern**_
+**_Ambassador pattern_**
 
 The server docker compose file is [docker-compose-server](scripts/docker-compose-server.yml) and client file is [docker-compose-client](scripts/docker-compose-client.yml)
 
@@ -20,4 +20,4 @@ The server docker compose file is [docker-compose-server](scripts/docker-compose
 ![image](images/ambassador.gif).
 
 ##Goal 3
-**_Docker Deploy**_
+**_Docker Deploy_**
