@@ -1,0 +1,6 @@
+FROM ubuntu:14.04
+MAINTAINER Kaustubh Sant
+
+RUN apt-get -y update && apt-get install curl -y
+CMD curl app1:9001
+

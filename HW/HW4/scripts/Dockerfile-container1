@@ -1,0 +1,10 @@
+FROM ubuntu:14.04
+MAINTAINER Kaustubh Sant
+
+RUN apt-get -y update && apt-get install -y socat
+
+RUN echo "testing docker link access"  > test
+
+CMD socat TCP-LISTEN:9001,fork file:test
+
+
