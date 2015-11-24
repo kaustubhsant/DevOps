@@ -21,3 +21,9 @@ The server docker compose file is [docker-compose-server](scripts/docker-compose
 
 ##Goal 3
 **_Docker Deploy_**
+
+The commands in [post-receive](scripts/post-receive) pull from registery, stop existing app container and run new instance.
+
+###Screencast
+
+![image](images/deploy.gif).
